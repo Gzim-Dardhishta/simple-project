@@ -1,21 +1,19 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Sans-serif;
 }
 
-/* #wrapper {
-    width: 1100px;
-    margin: 0 auto;
-} */
-
-#header, .title, #main-content, .page-buttons, #footer{
+#header, .title, #main-content, .page-buttons{
     max-width: 1100px;
     margin: 0 auto;
 }
 
 #header {
     display: flex;
+}
+.pos{
+    position: fixed;
 }
 
 #logo{
@@ -83,6 +81,10 @@
     margin-top: 140px;
 }
 
+.musthead-search button{
+    cursor: pointer;
+}
+
 .musthead-search input{
     border: 0;
     padding: 10px;
@@ -146,6 +148,123 @@
     height: 150px;
 }
 
+#main-content .images {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#main-content .images span {
+    font-size: 11px;
+    color: lightgray;
+}
 
 
+#main-content .images span.space {
+    padding-right: 120px;
+}
+
+.page-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.page-buttons input{
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    background-color: lightseagreen;
+    border: 0;
+    border-radius: 3px;
+}
+
+.page-buttons .numbers input {
+    background-color: lightgray;
+}
+
+.page-buttons .numbers input[id="1"] {
+    background-color: lightseagreen;
+}
+
+.page-buttons .numbers input[type="submit"]:hover {
+    background-color: lightseagreen
+}
+
+#footer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(211, 211, 211, 0.288);
+}
+
+#footer .main-footer {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
+
+#footer h3 {
+    color: lightseagreen;
+    margin-bottom: 25px;
+}
+
+#footer p{ 
+    color: lightgray;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+#footer .main-footer .about-catalog span{
+    color: lightgray;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+#footer .main-footer .other-links p{
+    cursor: pointer;
+}
+
+
+#footer .main-footer .about-catalog {
+    width: 270px;
+}
+
+#footer .main-footer .links .social-links {
+    font-size: 30px;
+}
+
+#footer .main-footer .links .social-links a {
+    color: gray;
+    margin-right: 10px;
+}
+
+#footer .main-footer .links .social-links a:last-child {
+    margin-right: 0;
+}
+
+#footer .main-footer .links .social-links a:hover {
+    color: #525252;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#footer .copyright{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 20px;
+}
 
